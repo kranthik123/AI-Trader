@@ -4,3 +4,11 @@ langchain-mcp-adapters>=0.1.0
 fastmcp==2.12.5
 langchain-community
 llama-cpp-python
+google-genai
+httpx
+PyYAML
+tenacity
+redis[hiredis]
+aiocache
+prometheus-client
+setuptools
