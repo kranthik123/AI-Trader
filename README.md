@@ -337,6 +337,72 @@ python3 -m http.server 8000
 
 ## ⚙️ Configuration Guide
 
+### 📋 Backend Configuration
+
+AI-Trader now supports multiple LLM backends, allowing you to use local models, hosted models, and free APIs. To configure a model, you need to add a `backend` field to its configuration in `configs/default_config.json`.
+
+#### OpenAI API (`openai_api`)
+
+This is the default backend and is used for models that are compatible with the OpenAI API.
+
+```json
+{
+  "name": "gpt-5",
+  "basemodel": "openai/gpt-5",
+  "signature": "gpt-5",
+  "enabled": true,
+  "backend": "openai_api"
+}
+```
+
+#### Ollama (`ollama_local`)
+
+To use a local model served by Ollama, set the `backend` to `ollama_local` and provide the `server_url`.
+
+```json
+{
+  "name": "ollama-model",
+  "basemodel": "ollama/ollama-model",
+  "signature": "ollama-model",
+  "enabled": true,
+  "backend": "ollama_local",
+  "server_url": "${OLLAMA_API_BASE}",
+  "api_key": "${OLLAMA_API_KEY}"
+}
+```
+
+#### LM Studio (`lmstudio_local`)
+
+To use a local model with LM Studio, set the `backend` to `lmstudio_local` and provide the `model_path`.
+
+```json
+{
+  "name": "lm-studio-local-model",
+  "basemodel": "local/lm-studio-model",
+  "signature": "lm-studio-local-model",
+  "enabled": false,
+  "backend": "lmstudio_local",
+  "model_path": "${LM_STUDIO_MODEL_PATH}",
+  "hardware_hint": "cpu"
+}
+```
+
+#### Free API (`free_api`)
+
+To use a generic API-based model, set the `backend` to `free_api` and provide the `api_url` and `api_key_env`.
+
+```json
+{
+  "name": "free-api-model",
+  "basemodel": "some/free-model",
+  "signature": "free-api-model",
+  "enabled": false,
+  "backend": "free_api",
+  "api_url": "${FREE_API_URL}",
+  "api_key_env": "FREE_API_KEY"
+}
+```
+
 ### 📋 Configuration File Structure
 
 ```json
@@ -351,7 +417,8 @@ python3 -m http.server 8000
       "name": "claude-3.7-sonnet",
       "basemodel": "anthropic/claude-3.7-sonnet",
       "signature": "claude-3.7-sonnet",
-      "enabled": true
+      "enabled": true,
+      "backend": "openai_api"
     }
   ],
   "agent_config": {
