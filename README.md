@@ -337,6 +337,74 @@ python3 -m http.server 8000
 
 ## ⚙️ Configuration Guide
 
+### 📋 Backend Configuration
+
+AI-Trader supports the following LLM backends:
+
+#### OpenAI-Compatible API (`openai_api`)
+
+Used for models that provide OpenAI-compatible endpoints (Gemini Pro 2.5, Groq API).
+
+```json
+{
+  "name": "gemini-pro-2.5",
+  "basemodel": "google/gemini-2.5-pro",
+  "signature": "gemini-pro-2.5",
+  "enabled": true,
+  "backend": "openai_api",
+  "openai_base_url": "${GEMINI_API_BASE}",
+  "openai_api_key": "${GEMINI_API_KEY}"
+}
+```
+
+#### Ollama Cloud (`ollama_cloud`)
+
+Used for cloud-hosted Ollama models like Minimax-M2.
+
+```json
+{
+  "name": "minimax-m2-cloud",
+  "basemodel": "minimax-m2",
+  "signature": "minimax-m2-cloud",
+  "enabled": true,
+  "backend": "ollama_cloud",
+  "server_url": "${OLLAMA_API_BASE}",
+  "api_key": "${OLLAMA_API_KEY}"
+}
+```
+
+#### LM Studio (`lmstudio_local`)
+
+To use a local model with LM Studio, set the `backend` to `lmstudio_local` and provide the `model_path`.
+
+```json
+{
+  "name": "lm-studio-local-model",
+  "basemodel": "local/lm-studio-model",
+  "signature": "lm-studio-local-model",
+  "enabled": false,
+  "backend": "lmstudio_local",
+  "model_path": "${LM_STUDIO_MODEL_PATH}",
+  "hardware_hint": "cpu"
+}
+```
+
+#### Free API (`free_api`)
+
+To use a generic API-based model, set the `backend` to `free_api` and provide the `api_url` and `api_key_env`.
+
+```json
+{
+  "name": "free-api-model",
+  "basemodel": "some/free-model",
+  "signature": "free-api-model",
+  "enabled": false,
+  "backend": "free_api",
+  "api_url": "${FREE_API_URL}",
+  "api_key_env": "FREE_API_KEY"
+}
+```
+
 ### 📋 Configuration File Structure
 
 ```json
@@ -351,7 +419,8 @@ python3 -m http.server 8000
       "name": "claude-3.7-sonnet",
       "basemodel": "anthropic/claude-3.7-sonnet",
       "signature": "claude-3.7-sonnet",
-      "enabled": true
+      "enabled": true,
+      "backend": "openai_api"
     }
   ],
   "agent_config": {

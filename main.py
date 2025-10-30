@@ -60,7 +60,7 @@ def get_agent_class(agent_type):
 
 def load_config(config_path=None):
     """
-    Load configuration file from configs directory
+    Load configuration file from configs directory and substitute environment variables.
     
     Args:
         config_path: Configuration file path, if None use default config
@@ -80,7 +80,12 @@ def load_config(config_path=None):
     
     try:
         with open(config_path, 'r', encoding='utf-8') as f:
-            config = json.load(f)
+            config_str = f.read()
+
+        # Substitute environment variables
+        config_str = os.path.expandvars(config_str)
+
+        config = json.loads(config_str)
         print(f"✅ Successfully loaded configuration file: {config_path}")
         return config
     except json.JSONDecodeError as e:
@@ -97,6 +102,10 @@ async def main(config_path=None):
     Args:
         config_path: Configuration file path, if None use default config
     """
+    # Set default runtime environment path if not set
+    if not os.getenv("RUNTIME_ENV_PATH"):
+        os.environ["RUNTIME_ENV_PATH"] = ".runtime_env.json"
+
     # Load configuration file
     config = load_config(config_path)
     
@@ -183,12 +192,9 @@ async def main(config_path=None):
         try:
             # Dynamically create Agent instance
             agent = AgentClass(
-                signature=signature,
-                basemodel=basemodel,
+                model_config=model_config,
                 stock_symbols=all_nasdaq_100_symbols,
                 log_path=log_path,
-                openai_base_url=openai_base_url,
-                openai_api_key=openai_api_key,
                 max_steps=max_steps,
                 max_retries=max_retries,
                 base_delay=base_delay,

@@ -11,7 +11,6 @@ from typing import Dict, List, Optional, Any
 from pathlib import Path
 
 from langchain_mcp_adapters.client import MultiServerMCPClient
-from langchain_openai import ChatOpenAI
 from langchain.agents import create_agent
 from dotenv import load_dotenv
 
@@ -23,6 +22,7 @@ sys.path.insert(0, project_root)
 from tools.general_tools import extract_conversation, extract_tool_messages, get_config_value, write_config_value
 from tools.price_tools import add_no_trade_record
 from prompts.agent_prompt import get_agent_system_prompt, STOP_SIGNAL
+from agent.llm_adapters import create_adapter
 
 # Load environment variables
 load_dotenv()
@@ -57,16 +57,13 @@ class BaseAgent:
     
     def __init__(
         self,
-        signature: str,
-        basemodel: str,
+        model_config: Dict[str, Any],
         stock_symbols: Optional[List[str]] = None,
         mcp_config: Optional[Dict[str, Dict[str, Any]]] = None,
         log_path: Optional[str] = None,
         max_steps: int = 10,
         max_retries: int = 3,
         base_delay: float = 0.5,
-        openai_base_url: Optional[str] = None,
-        openai_api_key: Optional[str] = None,
         initial_cash: float = 10000.0,
         init_date: str = "2025-10-13"
     ):
@@ -74,21 +71,19 @@ class BaseAgent:
         Initialize BaseAgent
         
         Args:
-            signature: Agent signature/name
-            basemodel: Base model name
+            model_config: Dictionary containing the model configuration
             stock_symbols: List of stock symbols, defaults to NASDAQ 100
             mcp_config: MCP tool configuration, including port and URL information
             log_path: Log path, defaults to ./data/agent_data
             max_steps: Maximum reasoning steps
             max_retries: Maximum retry attempts
             base_delay: Base delay time for retries
-            openai_base_url: OpenAI API base URL
-            openai_api_key: OpenAI API key
             initial_cash: Initial cash amount
             init_date: Initialization date
         """
-        self.signature = signature
-        self.basemodel = basemodel
+        self.model_config = model_config
+        self.signature = model_config["signature"]
+        self.basemodel = model_config["basemodel"]
         self.stock_symbols = stock_symbols or self.DEFAULT_STOCK_SYMBOLS
         self.max_steps = max_steps
         self.max_retries = max_retries
@@ -102,20 +97,10 @@ class BaseAgent:
         # Set log path
         self.base_log_path = log_path or "./data/agent_data"
         
-        # Set OpenAI configuration
-        if openai_base_url==None:
-            self.openai_base_url = os.getenv("OPENAI_API_BASE")
-        else:
-            self.openai_base_url = openai_base_url
-        if openai_api_key==None:
-            self.openai_api_key = os.getenv("OPENAI_API_KEY")
-        else:
-            self.openai_api_key = openai_api_key
-        
         # Initialize components
         self.client: Optional[MultiServerMCPClient] = None
         self.tools: Optional[List] = None
-        self.model: Optional[ChatOpenAI] = None
+        self.model: Optional[Any] = None
         self.agent: Optional[Any] = None
         
         # Data paths
@@ -154,14 +139,13 @@ class BaseAgent:
         self.tools = await self.client.get_tools()
         print(f"✅ Loaded {len(self.tools)} MCP tools")
         
-        # Create AI model
-        self.model = ChatOpenAI(
-            model=self.basemodel,
-            base_url=self.openai_base_url,
-            api_key=self.openai_api_key,
-            max_retries=3,
-            timeout=30
-        )
+        # Create AI model using the adapter factory
+        try:
+            adapter = create_adapter(self.model_config)
+            self.model = adapter.get_llm()
+        except (ValueError, KeyError) as e:
+            print(f"❌ Error creating LLM adapter: {e}")
+            raise
         
         # Note: agent will be created in run_trading_session() based on specific date
         # because system_prompt needs the current date and price information
