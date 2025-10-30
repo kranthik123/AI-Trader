@@ -1,0 +1,190 @@
+{"timestamp": "2025-10-30T23:25:20.955723", "signature": "google-gemini-pro-2.5", "new_messages": [{"role": "user", "content": "Please analyze and update today's (2025-10-13) positions."}]}
+{"timestamp": "2025-10-30T23:25:20.962115", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:25:20.962252", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:25:20.965988", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:25:20.966119", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:25:20.969471", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:25:20.969601", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:25:20.972764", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:25:20.972887", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:25:20.976418", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:25:20.976545", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:25:20.979752", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:25:20.979868", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:25:20.983099", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:25:20.983217", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:25:20.987210", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:25:20.987335", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:25:20.990967", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:25:20.991088", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:25:20.995168", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:25:20.995296", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:25:57.361315", "signature": "google-gemini-pro-2.5", "new_messages": [{"role": "user", "content": "Please analyze and update today's (2025-10-13) positions."}]}
+{"timestamp": "2025-10-30T23:25:57.367447", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:25:57.367590", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:25:57.371057", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:25:57.371213", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:25:57.374355", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:25:57.374450", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:25:57.377560", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:25:57.377659", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:25:57.380936", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:25:57.381034", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:25:57.384444", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:25:57.384552", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:25:57.388058", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:25:57.388203", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:25:57.391993", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:25:57.392133", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:25:57.395894", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:25:57.395990", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:25:57.400028", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:25:57.400166", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:29:54.960001", "signature": "google-gemini-pro-2.5", "new_messages": [{"role": "user", "content": "Please analyze and update today's (2025-10-13) positions."}]}
+{"timestamp": "2025-10-30T23:29:54.965404", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:29:54.965527", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:29:54.968560", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:29:54.968671", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:29:54.971662", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:29:54.971758", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:29:54.974497", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:29:54.974594", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:29:54.977405", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:29:54.977514", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:29:54.980612", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:29:54.980711", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:29:54.983680", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:29:54.983772", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:29:54.986733", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:29:54.986884", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:29:54.991536", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:29:54.991645", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:29:54.994807", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:29:54.994905", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:32:23.016539", "signature": "google-gemini-pro-2.5", "new_messages": [{"role": "user", "content": "Please analyze and update today's (2025-10-13) positions."}]}
+{"timestamp": "2025-10-30T23:32:23.023173", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:32:23.023310", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:32:23.026907", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:32:23.027034", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:32:23.030228", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:32:23.030334", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:32:23.033488", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:32:23.033602", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:32:23.036792", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:32:23.036901", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:32:23.040460", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:32:23.040572", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:32:23.044091", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:32:23.044283", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:32:23.047960", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:32:23.048059", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:32:23.053262", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:32:23.053407", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:32:23.057073", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:32:23.057172", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:33:01.588433", "signature": "google-gemini-pro-2.5", "new_messages": [{"role": "user", "content": "Please analyze and update today's (2025-10-13) positions."}]}
+{"timestamp": "2025-10-30T23:33:01.594642", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:33:01.594861", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:33:01.598258", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:33:01.598354", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:33:01.601545", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:33:01.601642", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:33:01.604637", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:33:01.604735", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:33:01.607786", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:33:01.607922", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:33:01.611335", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:33:01.611429", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:33:01.614607", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:33:01.614694", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:33:01.618210", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:33:01.618308", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:33:01.623747", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:33:01.623901", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:33:01.627770", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:33:01.627921", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:33:54.729701", "signature": "google-gemini-pro-2.5", "new_messages": [{"role": "user", "content": "Please analyze and update today's (2025-10-13) positions."}]}
+{"timestamp": "2025-10-30T23:33:54.735154", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:33:54.735270", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:33:54.738400", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:33:54.738503", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:33:54.741593", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:33:54.741707", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:33:54.744613", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:33:54.744723", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:33:54.747701", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:33:54.747801", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:33:54.750937", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:33:54.751034", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:33:54.753979", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:33:54.754069", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:33:54.757096", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:33:54.757190", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:33:54.762057", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:33:54.762153", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:33:54.765418", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:33:54.765518", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:34:57.383329", "signature": "google-gemini-pro-2.5", "new_messages": [{"role": "user", "content": "Please analyze and update today's (2025-10-13) positions."}]}
+{"timestamp": "2025-10-30T23:34:57.389202", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:34:57.389357", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:34:57.392731", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:34:57.392854", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:34:57.396183", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:34:57.396305", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:34:57.399285", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:34:57.399400", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:34:57.402438", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:34:57.402552", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:34:57.405759", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:34:57.405872", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:34:57.409019", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:34:57.409129", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:34:57.412276", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:34:57.412376", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:34:57.417215", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:34:57.417329", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:34:57.420576", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "This is a test response from Google."}}
+{"timestamp": "2025-10-30T23:34:57.420681", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:35:38.277480", "signature": "google-gemini-pro-2.5", "new_messages": [{"role": "user", "content": "Please analyze and update today's (2025-10-13) positions."}]}
+{"timestamp": "2025-10-30T23:35:38.283233", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "The trading period is over."}}
+{"timestamp": "2025-10-30T23:35:38.283368", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:35:38.286606", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "The trading period is over."}}
+{"timestamp": "2025-10-30T23:35:38.286718", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:35:38.289884", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "The trading period is over."}}
+{"timestamp": "2025-10-30T23:35:38.289985", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:35:38.292936", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "The trading period is over."}}
+{"timestamp": "2025-10-30T23:35:38.293045", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:35:38.296082", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "The trading period is over."}}
+{"timestamp": "2025-10-30T23:35:38.296200", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:35:38.299391", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "The trading period is over."}}
+{"timestamp": "2025-10-30T23:35:38.299494", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:35:38.302494", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "The trading period is over."}}
+{"timestamp": "2025-10-30T23:35:38.302627", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:35:38.305676", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "The trading period is over."}}
+{"timestamp": "2025-10-30T23:35:38.305775", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:35:38.310496", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "The trading period is over."}}
+{"timestamp": "2025-10-30T23:35:38.310646", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:35:38.313829", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "The trading period is over."}}
+{"timestamp": "2025-10-30T23:35:38.313926", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:36:39.203647", "signature": "google-gemini-pro-2.5", "new_messages": [{"role": "user", "content": "Please analyze and update today's (2025-10-13) positions."}]}
+{"timestamp": "2025-10-30T23:36:39.209984", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "The trading period is over."}}
+{"timestamp": "2025-10-30T23:36:39.210128", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:36:39.213573", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "The trading period is over."}}
+{"timestamp": "2025-10-30T23:36:39.213693", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:36:39.216941", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "The trading period is over."}}
+{"timestamp": "2025-10-30T23:36:39.217050", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:36:39.220258", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "The trading period is over."}}
+{"timestamp": "2025-10-30T23:36:39.220363", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:36:39.223617", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "The trading period is over."}}
+{"timestamp": "2025-10-30T23:36:39.223727", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:36:39.227297", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "The trading period is over."}}
+{"timestamp": "2025-10-30T23:36:39.227495", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:36:39.230937", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "The trading period is over."}}
+{"timestamp": "2025-10-30T23:36:39.231037", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:36:39.234562", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "The trading period is over."}}
+{"timestamp": "2025-10-30T23:36:39.234663", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:36:39.240228", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "The trading period is over."}}
+{"timestamp": "2025-10-30T23:36:39.240344", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:36:39.244250", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "assistant", "content": "The trading period is over."}}
+{"timestamp": "2025-10-30T23:36:39.244362", "signature": "google-gemini-pro-2.5", "new_messages": {"role": "user", "content": "Tool results: "}}
+{"timestamp": "2025-10-30T23:37:15.600479", "signature": "google-gemini-pro-2.5", "new_messages": [{"role": "user", "content": "Please analyze and update today's (2025-10-13) positions."}]}

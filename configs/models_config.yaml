@@ -1,0 +1,46 @@
+# Default configuration for LLM providers and models.
+# This file can be overridden by environment variables.
+
+default_provider: google
+
+providers:
+  google:
+    enabled: true
+    default_model: gemini-pro-2.5
+    models:
+      gemini-pro-2.5:
+        enabled: true
+        display_name: "Google Gemini Pro 2.5"
+        type: google
+
+  ollama:
+    enabled: false
+    default_model: glm-4.6:cloud
+    api_base: "https://api.ollama.com"
+    models:
+      glm-4.6:cloud:
+        enabled: false
+      qwen3-coder:480b-cloud:
+        enabled: false
+      kimi-k2:1t-cloud:
+        enabled: false
+      gpt-oss:120b-cloud:
+        enabled: false
+      gpt-oss:20b-cloud:
+        enabled: false
+      deepseek-v3.1:671b-cloud:
+        enabled: false
+      minimax-m2:cloud:
+        enabled: false
+
+  openrouter:
+    enabled: false
+    api_base: "https://api.openrouter.ai/v1"
+    default_model: "minimax/minimax-m2:free"
+    models:
+      minimax/minimax-m2:free:
+        enabled: false
+      deepseek/deepseek-chat-v3.1:free:
+        enabled: false
+      qwen/qwen3-coder:free:
+        enabled: false

@@ -22,7 +22,7 @@ sys.path.insert(0, project_root)
 from tools.general_tools import extract_conversation, extract_tool_messages, get_config_value, write_config_value
 from tools.price_tools import add_no_trade_record
 from prompts.agent_prompt import get_agent_system_prompt, STOP_SIGNAL
-from agent.llm_adapters import create_adapter
+from agent.llm.provider import ProviderFactory
 
 # Load environment variables
 load_dotenv()
@@ -57,6 +57,7 @@ class BaseAgent:
     
     def __init__(
         self,
+        config: Dict[str, Any],
         model_config: Dict[str, Any],
         stock_symbols: Optional[List[str]] = None,
         mcp_config: Optional[Dict[str, Dict[str, Any]]] = None,
@@ -71,6 +72,7 @@ class BaseAgent:
         Initialize BaseAgent
         
         Args:
+            config: Dictionary containing the full application configuration
             model_config: Dictionary containing the model configuration
             stock_symbols: List of stock symbols, defaults to NASDAQ 100
             mcp_config: MCP tool configuration, including port and URL information
@@ -81,6 +83,7 @@ class BaseAgent:
             initial_cash: Initial cash amount
             init_date: Initialization date
         """
+        self.config = config
         self.model_config = model_config
         self.signature = model_config["signature"]
         self.basemodel = model_config["basemodel"]
@@ -141,8 +144,10 @@ class BaseAgent:
         
         # Create AI model using the adapter factory
         try:
-            adapter = create_adapter(self.model_config)
-            self.model = adapter.get_llm()
+            provider_name = self.model_config.get("provider", "google")
+            model_name = self.model_config.get("basemodel")
+            provider = ProviderFactory.get(provider_name, model_name, self.config)
+            self.model = provider.get_llm()
         except (ValueError, KeyError) as e:
             print(f"❌ Error creating LLM adapter: {e}")
             raise

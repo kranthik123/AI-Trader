@@ -58,6 +58,8 @@ def get_agent_class(agent_type):
         raise AttributeError(f"❌ Class {class_name} not found in module {module_path}: {e}")
 
 
+import yaml
+
 def load_config(config_path=None):
     """
     Load configuration file from configs directory and substitute environment variables.
@@ -68,12 +70,22 @@ def load_config(config_path=None):
     Returns:
         dict: Configuration dictionary
     """
-    if config_path is None:
-        # Default configuration file path
-        config_path = Path(__file__).parent / "configs" / "default_config.json"
-    else:
+    if config_path:
         config_path = Path(config_path)
-    
+    else:
+        # Default configuration file path
+        yaml_config_path = Path(__file__).parent / "configs" / "models_config.yaml"
+        json_config_path = Path(__file__).parent / "configs" / "default_config.json"
+
+        if yaml_config_path.exists():
+            config_path = yaml_config_path
+        elif json_config_path.exists():
+            print("⚠️ DeprecationWarning: configs/default_config.json is deprecated. Please use configs/models_config.yaml instead.")
+            config_path = json_config_path
+        else:
+            print("❌ Configuration file not found in configs directory.")
+            exit(1)
+
     if not config_path.exists():
         print(f"❌ Configuration file does not exist: {config_path}")
         exit(1)
@@ -85,11 +97,15 @@ def load_config(config_path=None):
         # Substitute environment variables
         config_str = os.path.expandvars(config_str)
 
-        config = json.loads(config_str)
+        if config_path.suffix == '.yaml':
+            config = yaml.safe_load(config_str)
+        else:
+            config = json.loads(config_str)
+
         print(f"✅ Successfully loaded configuration file: {config_path}")
         return config
-    except json.JSONDecodeError as e:
-        print(f"❌ Configuration file JSON format error: {e}")
+    except (json.JSONDecodeError, yaml.YAMLError) as e:
+        print(f"❌ Configuration file format error: {e}")
         exit(1)
     except Exception as e:
         print(f"❌ Failed to load configuration file: {e}")
@@ -136,12 +152,6 @@ async def main(config_path=None):
         print("❌ INIT_DATE is greater than END_DATE")
         exit(1)
  
-    # Get model list from configuration file (only select enabled models)
-    enabled_models = [
-        model for model in config["models"] 
-        if model.get("enabled", True)
-    ]
-    
     # Get agent configuration
     agent_config = config.get("agent_config", {})
     log_config = config.get("log_config", {})
@@ -150,57 +160,54 @@ async def main(config_path=None):
     base_delay = agent_config.get("base_delay", 0.5)
     initial_cash = agent_config.get("initial_cash", 10000.0)
     
-    # Display enabled model information
-    model_names = [m.get("name", m.get("signature")) for m in enabled_models]
-    
     print("🚀 Starting trading experiment")
     print(f"🤖 Agent type: {agent_type}")
     print(f"📅 Date range: {INIT_DATE} to {END_DATE}")
-    print(f"🤖 Model list: {model_names}")
     print(f"⚙️  Agent config: max_steps={max_steps}, max_retries={max_retries}, base_delay={base_delay}, initial_cash={initial_cash}")
-                    
-    for model_config in enabled_models:
-        # Read basemodel and signature directly from configuration file
-        model_name = model_config.get("name", "unknown")
-        basemodel = model_config.get("basemodel")
-        signature = model_config.get("signature")
-        openai_base_url = model_config.get("openai_base_url",None)
-        openai_api_key = model_config.get("openai_api_key",None)
 
-        # Validate required fields
-        if not basemodel:
-            print(f"❌ Model {model_name} missing basemodel field")
+    for provider_name, provider_config in config.get("providers", {}).items():
+        if not provider_config.get("enabled", False):
             continue
-        if not signature:
-            print(f"❌ Model {model_name} missing signature field")
-            continue
-        
-        print("=" * 60)
-        print(f"🤖 Processing model: {model_name}")
-        print(f"📝 Signature: {signature}")
-        print(f"🔧 BaseModel: {basemodel}")
-        
-        # Initialize runtime configuration
-        write_config_value("SIGNATURE", signature)
-        write_config_value("TODAY_DATE", END_DATE)
-        write_config_value("IF_TRADE", False)
+
+        for model_name, model_config in provider_config.get("models", {}).items():
+            if not model_config.get("enabled", False):
+                continue
+
+            # Add provider and model name to the model_config
+            model_config["provider"] = provider_name
+            model_config["model"] = model_name
+
+            # For backward compatibility, we'll create a signature and basemodel
+            model_config["signature"] = f"{provider_name}-{model_name}"
+            model_config["basemodel"] = model_name
 
 
-        # Get log path configuration
-        log_path = log_config.get("log_path", "./data/agent_data")
+            print("=" * 60)
+            print(f"🤖 Processing model: {model_name}")
+            print(f"📝 Signature: {model_config['signature']}")
+            print(f"🔧 Provider: {provider_name}")
 
-        try:
-            # Dynamically create Agent instance
-            agent = AgentClass(
-                model_config=model_config,
-                stock_symbols=all_nasdaq_100_symbols,
-                log_path=log_path,
-                max_steps=max_steps,
-                max_retries=max_retries,
-                base_delay=base_delay,
-                initial_cash=initial_cash,
-                init_date=INIT_DATE
-            )
+            # Initialize runtime configuration
+            write_config_value("SIGNATURE", model_config["signature"])
+            write_config_value("TODAY_DATE", END_DATE)
+            write_config_value("IF_TRADE", False)
+
+            # Get log path configuration
+            log_path = log_config.get("log_path", "./data/agent_data")
+
+            try:
+                # Dynamically create Agent instance
+                agent = AgentClass(
+                    config=config,
+                    model_config=model_config,
+                    stock_symbols=all_nasdaq_100_symbols,
+                    log_path=log_path,
+                    max_steps=max_steps,
+                    max_retries=max_retries,
+                    base_delay=base_delay,
+                    initial_cash=initial_cash,
+                    init_date=INIT_DATE
+                )
             
             print(f"✅ {agent_type} instance created successfully: {agent}")
             
