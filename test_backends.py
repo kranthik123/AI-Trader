@@ -32,14 +32,11 @@ async def main():
 
 if __name__ == "__main__":
     # Set dummy environment variables for testing
-    os.environ["DEEPSEEK_API_BASE"] = "https://api.deepseek.com"
-    os.environ["DEEPSEEK_API_KEY"] = "dummy_key"
     os.environ["GEMINI_API_BASE"] = "https://generativelanguage.googleapis.com"
     os.environ["GEMINI_API_KEY"] = "dummy_key"
+    os.environ["GROQ_API_BASE"] = "https://api.groq.com/openai/v1"
+    os.environ["GROQ_API_KEY"] = "dummy_key"
     os.environ["OLLAMA_API_BASE"] = "http://localhost:11434/v1"
     os.environ["OLLAMA_API_KEY"] = "ollama"
-    os.environ["LM_STUDIO_MODEL_PATH"] = "dummy_path"
-    os.environ["FREE_API_URL"] = "https://api.example.com"
-    os.environ["FREE_API_KEY"] = "dummy_key"
-
+    
     asyncio.run(main())

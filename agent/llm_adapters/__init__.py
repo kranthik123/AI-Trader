@@ -7,6 +7,10 @@ def create_adapter(model_config: Dict[str, Any]) -> BaseAdapter:
 
     Args:
         model_config: A dictionary containing the model configuration.
+        
+    Supported backends:
+    - openai_api: For OpenAI-compatible APIs (Gemini, Groq)
+    - ollama_cloud: For Ollama cloud services (Minimax-M2)
 
     Returns:
         An instance of the appropriate LLM adapter.
@@ -16,14 +20,10 @@ def create_adapter(model_config: Dict[str, Any]) -> BaseAdapter:
     if backend == "openai_api":
         from .openai_adapter import OpenAIAdapter
         return OpenAIAdapter(model_config)
-    elif backend == "ollama_local":
+    elif backend == "ollama_cloud":
+        # Ollama cloud uses the same adapter code; expect `server_url` and `api_key` to point
+        # to the Ollama Cloud endpoint and API key (set via environment/.env).
         from .ollama_adapter import OllamaAdapter
         return OllamaAdapter(model_config)
-    elif backend == "lmstudio_local":
-        from .lmstudio_adapter import LMStudioAdapter
-        return LMStudioAdapter(model_config)
-    elif backend == "free_api":
-        from .free_api_adapter import FreeApiAdapter
-        return FreeApiAdapter(model_config)
     else:
         raise ValueError(f"Unsupported backend: {backend}")

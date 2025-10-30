@@ -339,33 +339,35 @@ python3 -m http.server 8000
 
 ### 📋 Backend Configuration
 
-AI-Trader now supports multiple LLM backends, allowing you to use local models, hosted models, and free APIs. To configure a model, you need to add a `backend` field to its configuration in `configs/default_config.json`.
+AI-Trader supports the following LLM backends:
 
-#### OpenAI API (`openai_api`)
+#### OpenAI-Compatible API (`openai_api`)
 
-This is the default backend and is used for models that are compatible with the OpenAI API.
+Used for models that provide OpenAI-compatible endpoints (Gemini Pro 2.5, Groq API).
 
 ```json
 {
-  "name": "gpt-5",
-  "basemodel": "openai/gpt-5",
-  "signature": "gpt-5",
+  "name": "gemini-pro-2.5",
+  "basemodel": "google/gemini-2.5-pro",
+  "signature": "gemini-pro-2.5",
   "enabled": true,
-  "backend": "openai_api"
+  "backend": "openai_api",
+  "openai_base_url": "${GEMINI_API_BASE}",
+  "openai_api_key": "${GEMINI_API_KEY}"
 }
 ```
 
-#### Ollama (`ollama_local`)
+#### Ollama Cloud (`ollama_cloud`)
 
-To use a local model served by Ollama, set the `backend` to `ollama_local` and provide the `server_url`.
+Used for cloud-hosted Ollama models like Minimax-M2.
 
 ```json
 {
-  "name": "ollama-model",
-  "basemodel": "ollama/ollama-model",
-  "signature": "ollama-model",
+  "name": "minimax-m2-cloud",
+  "basemodel": "minimax-m2",
+  "signature": "minimax-m2-cloud",
   "enabled": true,
-  "backend": "ollama_local",
+  "backend": "ollama_cloud",
   "server_url": "${OLLAMA_API_BASE}",
   "api_key": "${OLLAMA_API_KEY}"
 }
